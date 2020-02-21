@@ -4,9 +4,20 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- bean definitions here -->
+	<bean id='addr' class='com.abeer.Address'>
+		<constructor-arg value='050123456'></constructor-arg>
+		<constructor-arg value='aaa@foo.c'></constructor-arg>
+		<constructor-arg value='Israel'></constructor-arg>
+		<constructor-arg value='Tel Aviv'></constructor-arg>
+	</bean>
+	
 	<bean id='p' class='com.abeer.Person'>
 		<constructor-arg value='109' type='int'></constructor-arg>
 		<constructor-arg value='abeer'></constructor-arg>
+		<constructor-arg> <ref bean='addr'/> </constructor-arg>
+		
 	</bean>
+	
+	
+	
 </beans>
