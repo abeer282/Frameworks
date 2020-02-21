@@ -17,9 +17,16 @@
 				<value>dodo</value>
 				<value>bobo</value>
 			</list>
-
 		 </constructor-arg>
-		
+		 
+		<constructor-arg> 
+			<map>
+				<entry key='Adele' value='Hello'></entry>
+				<entry key='Bionce' value='Halo'></entry>
+				<entry key='Rammstien' value='mutter'></entry>
+				<entry key='Mitallica' value='Nothing else matter'></entry>
+			</map>
+		 </constructor-arg>
 	</bean>
 	
 	
