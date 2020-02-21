@@ -3,7 +3,7 @@ package com.abeer;
 public class Person {
 	private int id;
 	private String personName;
-	
+	private Address address;
 	public Person() {
 		super();
 	}
@@ -24,8 +24,15 @@ public class Person {
 		this.personName = personName;
 	}
 	
+	public Person(int id, String personName, Address address) {
+		super();
+		this.id = id;
+		this.personName = personName;
+		this.address = address;
+	}
+
 	void display() {
-		System.out.println("ID: "+id+", Name: "+personName);
+		System.out.println("ID: "+id+", Name: "+personName+", Addr: "+address.toString());
 	}
 
 }
