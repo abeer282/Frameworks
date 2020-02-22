@@ -30,6 +30,25 @@
 			<value>blue</value>
 		</property>
 		<property name='addr' ref='addr'> </property>
+		<property name="nickNames">
+			<list>
+				<value>zozo</value>
+				<value>mimi</value>
+				<value>lala</value>
+				<value>dodo</value>
+				<value>bobo</value>
+			</list>
+		</property>
+		<property name="singers">
+			<map>
+				<entry key='Adele' value='Hello'></entry>
+				<entry key='Beyonce' value='Halo'></entry>
+				<entry key='Rammstien' value='mutter'></entry>
+				<entry key='Metallica' value='Nothing else matter'></entry>
+			</map>
+		</property>
+		
+		
 	</bean>
 	
 
