@@ -5,6 +5,12 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+	<bean id='addr' class='com.abeer.Address'>
+		<constructor-arg value='050123456'></constructor-arg>
+		<constructor-arg value='aaa@foo.c'></constructor-arg>
+		<constructor-arg value='Israel'></constructor-arg>
+		<constructor-arg value='Tel Aviv'></constructor-arg>
+	</bean>
 	
 	<bean id='p' class='com.abeer.Person'>
 		<constructor-arg value='10' type='int'></constructor-arg>
@@ -22,13 +28,17 @@
 		<constructor-arg> 
 			<map>
 				<entry key='Adele' value='Hello'></entry>
-				<entry key='Bionce' value='Halo'></entry>
+				<entry key='Beyonce' value='Halo'></entry>
 				<entry key='Rammstien' value='mutter'></entry>
-				<entry key='Mitallica' value='Nothing else matter'></entry>
+				<entry key='Metallica' value='Nothing else matter'></entry>
 			</map>
 		 </constructor-arg>
 	</bean>
 	
+	
+	<bean id='p1' class='com.abeer.Person' parent='p'>
+		<constructor-arg><ref bean="addr"/></constructor-arg>
+	</bean>
 	
 	
 </beans>

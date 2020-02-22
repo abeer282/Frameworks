@@ -11,7 +11,7 @@ public class Person {
 	private String personName;
 	private List<String> nickNames;
 	private Map<String,String> singers;
-	
+	private Address addr;
 	public Person() {
 		super();
 	}
@@ -25,6 +25,14 @@ public class Person {
 		this.singers = singers;
 	}
 
+	public Person(int id, String personName, List<String> nickNames, Map<String, String> singers, Address addr) {
+		super();
+		this.id = id;
+		this.personName = personName;
+		this.nickNames = nickNames;
+		this.singers = singers;
+		this.addr = addr;
+	}
 
 
 	void display() {
@@ -40,6 +48,7 @@ public class Person {
 			Entry<String,String> entry=it1.next();
 			System.out.println("Key: "+entry.getKey()+", Value: "+entry.getValue());
 		}
+		System.out.println("Address:"+addr.toString());
 	}
 
 
