@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id='addr' class='com.abeer.Address'>
+		<property name="phone">
+			<value>050123456</value>
+		</property>
+		<property name="email">
+			<value>aaa@foo.c</value>
+		</property>
+		<property name="country">
+			<value>Israel</value>
+		</property>
+		<property name="city">
+			<value>Tel Aviv</value>
+		</property>
+	</bean>
+	
+	<bean id='p' class='com.abeer.Person'>
+		<property name="id">
+			<value>111</value>
+		</property>
+		<property name="personName">
+			<value>abeer</value>
+		</property>
+		<property name="favColor">
+			<value>blue</value>
+		</property>
+		<property name='addr' ref='addr'> </property>
+	</bean>
+	
+
+	
+</beans>
