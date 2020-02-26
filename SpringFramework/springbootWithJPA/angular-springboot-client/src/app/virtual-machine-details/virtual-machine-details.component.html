@@ -1,0 +1,18 @@
+<h2>VM Details</h2> 
+
+<hr/>
+<div *ngIf="virtualMachine">
+  <div>
+    <label><b>ip: </b></label> {{virtualMachine.ip}}
+  </div>
+  <div>
+    <label><b>username: </b></label> {{virtualMachine.username}}
+  </div>
+  <div>
+    <label><b>pass: </b></label> {{virtualMachine.password_}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Virtual Machine List</button><br>

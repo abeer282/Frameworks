@@ -1,0 +1,21 @@
+<h3>Update Virtual MAchine</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">ip</label>
+      <input type="text" class="form-control" id="ip" required [(ngModel)]="virtualMachine.ip" name="ip">
+    </div>
+
+    <div class="form-group">
+      <label for="name"> username </label>
+      <input type="text" class="form-control" id="username" required [(ngModel)]="virtualMachine.username" name="username">
+    </div>
+
+    <div class="form-group">
+      <label for="name"> password </label>
+      <input type="text" class="form-control" id="password_" required [(ngModel)]="virtualMachine.password_" name="password_">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
