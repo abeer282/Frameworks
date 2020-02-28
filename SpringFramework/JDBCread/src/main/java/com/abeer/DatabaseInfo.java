@@ -1,16 +1,10 @@
 package com.abeer;
 
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 import org.springframework.jdbc.core.RowMapper;
-
-import javax.swing.tree.TreePath;
-
-import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.PreparedStatementCallback;
 
 public class DatabaseInfo {
 	private JdbcTemplate template;

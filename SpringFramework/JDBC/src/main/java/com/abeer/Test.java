@@ -11,15 +11,15 @@ public class Test {
 		
 		DatabaseInfo di=(DatabaseInfo)conx.getBean("dbi");
 		
-		//di.insertPerson(new Person("Bobo","aaa","add2r",66,111111)); //insert
+		di.insertPerson(new Person("Soso","asd","adr2",33,21232)); //insert
 		
 		//delete
 //		Person p=new Person();
 //		p.setId(2);
 //		di.deletePerson(p);
-		
-		int id = 3;
-		di.updatePerson(id, new Person("Momo","Aaa","add2r",63,363625));
+//		
+//		int id = 3;
+//		di.updatePerson(id, new Person("Momo","Aaa","add2r",63,363625));
 
 	}
 
