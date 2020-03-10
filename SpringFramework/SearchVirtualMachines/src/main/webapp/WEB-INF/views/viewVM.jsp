@@ -19,13 +19,26 @@
 					<form:form method='post' action='viewVM' class='form-group'>
 					
 					<table class=table-bordered width='100%' border='1' cellpadding='1'>
-						<tr><th>ID</th> <th>IP</th> <th>USERNAME</th> <th>PASSWORD</th>  </tr>
+						<tr><th>ID</th> <th>IP</th> <th>USERNAME</th> <th>PASSWORD</th>  <th>PATH</th><th>other</th> </tr>
 						<c:forEach var="vm" items="${list}">
 							<tr> 
 								<td> ${vm.ID}</td>
 								<td> ${vm.IP}</td>
 								<td> ${vm.userName}</td>
 								<td> ${vm.password}</td>
+								<td> ${vm.path}</td>
+								<td> 
+										      <form:form method = "GET" action = "viewVM">
+										         <table>
+										            <tr>
+										               <td>
+										                  <input type = "submit" value = "search"/>
+										               </td>
+										            </tr>
+										         </table>  
+										      </form:form>
+								
+								</td>
 							</tr>
 						</c:forEach>
 					</table>

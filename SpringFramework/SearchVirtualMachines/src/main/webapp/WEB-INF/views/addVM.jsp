@@ -28,8 +28,12 @@
 							<td><form:input path='userName' class='form-control'/> </td>
 						</tr>
 						<tr>
-							<td>password_:</td>
+							<td>password:</td>
 							<td><form:input path='password' class='form-control'/> </td>
+						</tr>
+						<tr>
+							<td>path:</td>
+							<td><form:input path='path' class='form-control'/> </td>
 						</tr>
 						<tr>
 							<td colspan='2'><input type='submit' value='submit' class='form-control'/> </td>

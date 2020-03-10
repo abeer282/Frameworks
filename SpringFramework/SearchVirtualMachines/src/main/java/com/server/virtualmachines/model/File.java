@@ -13,30 +13,25 @@ public class File {
 	    private int fileSize;
 	    private String fileLoc;
 
-	    public File(UUID vmID,String fileName,Date date, int fileSize, String fileLoc){
+	    public File(UUID vmID, String fileName, Date date, int fileSize, String fileLoc){
 	        this.vmID=vmID;
 	        this.fileName=fileName;
 	        this.fileSize=fileSize;
 	        this.creationDate=date;
 	        this.fileLoc=fileLoc;
 	    }
-	    
 	    public File(){
 	    }
-	    
-	    public void setvmID(UUID vmID){
+	    public void setVmID(UUID vmID){
 	        this.vmID=vmID;
 	    }
-	    
-	    public void setfileName(String fileName){
+	    public void setFileName(String fileName){
 	        this.fileName=fileName;
 	    }
-	    
-	    public void setfileSize(int fileSize){
+	    public void setFileSize(int fileSize){
 	        this.fileSize=fileSize;
 	    }
-	    
-	    public void setcreationDate(String date){
+	    public void setCreationDate(String date){
 	    	Date d1=new Date();
 	    	try {
 				d1=new SimpleDateFormat("yyyy-MM-dd").parse(date);
@@ -46,27 +41,25 @@ public class File {
 	    	
 	        this.creationDate=d1;
 	    }
-	    
-	    public void setfileLoc(String fileLoc) {
+	    public void setFileLoc(String fileLoc) {
 	          this.fileLoc=fileLoc;	
-	    
 	    }
-	    public UUID getvmID(){
+	    public UUID getVmID(){
 	        return vmID;
 	    }
 	    
-	    public String getfileName(){
+	    public String getFileName(){
 	        return fileName;
 	    }
 	    
-	    public int getfileSize(){
+	    public int getFileSize(){
 	        return fileSize;
 	    }
 	    
 	    public Date getCreationDate(){
 	        return creationDate;
 	    }
-	    public String getfileLoc() {
+	    public String getFileLoc() {
 	          return fileLoc;
 	    
 	    }

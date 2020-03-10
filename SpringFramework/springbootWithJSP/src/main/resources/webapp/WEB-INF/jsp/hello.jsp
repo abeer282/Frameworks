@@ -10,5 +10,6 @@
 <body>
     <h2 class="hello-title">Hello ${name}!</h2>
     <script src="/js/main.js"></script>
+    <a href='main'>Goto</a>
 </body>
 </html>
