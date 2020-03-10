@@ -1,0 +1,14 @@
+
+<p>koko works!</p>
+<div>
+    <h3>Kiki collection</h3>
+    <div class="row">
+      <div class="col-sm-4" *ngFor="let kik of koko | async">
+        <div class="card">
+          <div class="card-body">
+            <a>{{kik}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
