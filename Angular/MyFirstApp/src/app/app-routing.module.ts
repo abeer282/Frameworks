@@ -1,17 +1,14 @@
-import { ButtonComponent } from './button/button.component';
+import { AppComponent } from './app.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { NotfoundComponent } from './notfound/notfound.component';
 
 
 const routes: Routes = [
-              {path: "", redirectTo:"button", pathMatch: "full"},
-              {path: "button", component: ButtonComponent},
-              {path: "**", component: NotfoundComponent}
+              {path: "",component:AppComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes) ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

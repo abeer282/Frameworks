@@ -1,22 +1,17 @@
-import { ButtonComponent } from './button/button.component';
-import { RouterModule, Routes } from '@angular/router';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NotfoundComponent } from './notfound/notfound.component';
+import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ButtonComponent,
-    NotfoundComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
