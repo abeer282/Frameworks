@@ -1,2 +1,10 @@
 App component
-<button (click)="getToken()">Get Token</button>
+
+<br><br>
+Username: <input (input)='username =$event.target.value'><br><br>
+
+Password<input (input)='password =$event.target.value'><br><br>
+
+<button (click)="getToken()">Get Token</button><br><br>
+{{token}}
+{{error}}

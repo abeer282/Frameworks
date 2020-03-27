@@ -12,13 +12,25 @@ export class AppComponent {
   constructor( private _http: HttpClient, private tokenService: TokenService){
 
   }
-
+  username='';
+  password='';
+  token='';
+  error='';
   getToken(){
-    this.tokenService.getToken('biro','1234')
+    this.tokenService.getToken(this.username,this.password)
                   .subscribe(
-                        res => console.log(res.access_token)
+                        res => {this.token=res.access_token;
+                                this.error='';
+                      },
+                        err => {this.error='ERROR';
+                                this.token='';
+                      }
+                        
                   );
+    
     console.log("token in component");
+    console.log(this.username);
+
   }
   getUsernameOfToken(tokenInfo){
     console.log("IIIIIIpppppp")
