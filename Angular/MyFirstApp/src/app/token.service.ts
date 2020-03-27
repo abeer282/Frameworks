@@ -1,6 +1,7 @@
+import { TokenData } from './TokenData';
 import { Injectable } from '@angular/core';
 
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -9,14 +10,21 @@ export class TokenService {
   num = Math.random();
   constructor(private _http: HttpClient) { }
 
-  getToken(){
-    return this._http.post(
-      "http://localhost:8080/oauth/token?grant_type=password&username=biro&password=1234",
-
-      {withCredentials:true}, 
-      
-      {headers: new HttpHeaders({'Authorization': 'Basic '+btoa('client:secret')})}
-          
-  );
+  getToken(username: string, password: string){
+    const getTokenUrl = 'http://localhost:8080/oauth/token';
+    const getTokenParams : HttpParams =new HttpParams()
+    .append('grant_type','password')
+    .append('username',username)
+    .append('password',password)
+    const getTokenHeaders: HttpHeaders = new HttpHeaders()
+    .append('Authorization', 'Basic '+btoa('client:secret'));
+    return this._http.post<TokenData>(getTokenUrl,
+                  {
+                      withCredentials:true
+                  },{
+                      headers: getTokenHeaders,
+                      params: getTokenParams
+                  }          
+    );
   }
 }

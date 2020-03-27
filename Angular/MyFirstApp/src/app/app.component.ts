@@ -14,9 +14,11 @@ export class AppComponent {
   }
 
   getToken(){
-    console.log(this.tokenService.getToken());
-    console.log("HIIII")
-    this.tokenService.getToken().subscribe(res => {console.log(res); this.getUsernameOfToken(res)});
+    this.tokenService.getToken('biro','1234')
+                  .subscribe(
+                        res => console.log(res.access_token)
+                  );
+    console.log("token in component");
   }
   getUsernameOfToken(tokenInfo){
     console.log("IIIIIIpppppp")
