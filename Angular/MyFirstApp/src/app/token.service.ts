@@ -12,10 +12,13 @@ export class TokenService {
 
   getToken(username: string, password: string){
     const getTokenUrl = 'http://localhost:8080/oauth/token';
-    const getTokenParams : HttpParams =new HttpParams()
-    .append('grant_type','password')
-    .append('username',username)
-    .append('password',password)
+    
+    var  getTokenParams : HttpParams =new HttpParams();
+    getTokenParams = getTokenParams.append('grant_type','password');
+    getTokenParams = getTokenParams.append('username',username);
+    getTokenParams = getTokenParams.append('password',password);
+
+
     const getTokenHeaders: HttpHeaders = new HttpHeaders()
     .append('Authorization', 'Basic '+btoa('client:secret'));
     return this._http.post<TokenData>(getTokenUrl,

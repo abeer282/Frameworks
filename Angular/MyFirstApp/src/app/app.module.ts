@@ -1,4 +1,3 @@
-import { ButtonComponent } from './button/button.component';
 import { TokenService } from './token.service';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,8 +8,7 @@ import {  HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ButtonComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
