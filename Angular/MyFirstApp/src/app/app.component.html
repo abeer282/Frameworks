@@ -1,9 +1,9 @@
 App component
 
 <br><br>
-Username: <input (input)='username =$event.target.value'><br><br>
+Username: <input (input)='userData.username =$event.target.value'><br><br>
 
-Password<input (input)='password =$event.target.value'><br><br>
+Password<input (input)='userData.password =$event.target.value'><br><br>
 
 <button (click)="getToken()">Get Token</button><br><br>
 {{token}}

@@ -1,6 +1,7 @@
 import { TokenService } from './token.service';
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { UserData } from './UserData';
 @Component({
   selector: 'app-root',
   providers:[TokenService],
@@ -12,12 +13,14 @@ export class AppComponent {
   constructor( private _http: HttpClient, private tokenService: TokenService){
 
   }
-  username='';
-  password='';
+  userData: UserData = new UserData;
   token='';
   error='';
+  printUser(){
+    console.log(this.userData.password+' :  ' +this.userData.username)
+  }
   getToken(){
-    this.tokenService.getToken(this.username,this.password)
+    this.tokenService.getToken(this.userData)
                   .subscribe(
                         res => {this.token=res.access_token;
                                 this.error='';
@@ -29,7 +32,7 @@ export class AppComponent {
                   );
     
     console.log("token in component");
-    console.log(this.username);
+    console.log(this.userData.username);
 
   }
   getUsernameOfToken(tokenInfo){

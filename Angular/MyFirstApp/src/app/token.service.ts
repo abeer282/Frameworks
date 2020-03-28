@@ -1,5 +1,6 @@
 import { TokenData } from './TokenData';
 import { Injectable } from '@angular/core';
+import { UserData } from './UserData';
 
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
@@ -7,16 +8,15 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
   providedIn: 'root'
 })
 export class TokenService {
-  num = Math.random();
   constructor(private _http: HttpClient) { }
 
-  getToken(username: string, password: string){
+  getToken(userData){
     const getTokenUrl = 'http://localhost:8080/oauth/token';
     
     var  getTokenParams : HttpParams =new HttpParams();
     getTokenParams = getTokenParams.append('grant_type','password');
-    getTokenParams = getTokenParams.append('username',username);
-    getTokenParams = getTokenParams.append('password',password);
+    getTokenParams = getTokenParams.append('username',userData.username);
+    getTokenParams = getTokenParams.append('password',userData.password);
 
 
     const getTokenHeaders: HttpHeaders = new HttpHeaders()
