@@ -1,3 +1,4 @@
+import { TodoService } from './todo.service';
 import { TokenService } from './token.service';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -30,7 +31,7 @@ import { AddtaskComponent } from './addtask/addtask.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [TokenService],
+  providers: [TokenService,TodoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

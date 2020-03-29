@@ -1,3 +1,4 @@
+import { TodoService } from './../todo.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,15 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddtaskComponent implements OnInit {
 
-  constructor() { }
+  constructor(private todo:TodoService) { }
 
   ngOnInit(): void {
   }
 
   item:string;
 
-  //TODO perform add task logic
+
   add(){
+    this.todo.addItem(this.item, '');
     console.log(this.item);
     this.item='';
   }

@@ -1,3 +1,4 @@
+import { TodoService } from './../todo.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tasklist.component.css']
 })
 export class TasklistComponent implements OnInit {
-  todoList=['do dishes','make bed']
-  constructor() { }
+
+  constructor(private todo:TodoService) { }
 
   ngOnInit(): void {
   }
