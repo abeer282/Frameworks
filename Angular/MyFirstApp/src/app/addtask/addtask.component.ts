@@ -12,4 +12,12 @@ export class AddtaskComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  item:string;
+
+  //TODO perform add task logic
+  add(){
+    console.log(this.item);
+    this.item='';
+  }
+
 }
