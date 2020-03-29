@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
-import { NotfoundComponent } from './notfound/notfound.component';
+import { LoginComponent } from './login/login.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { TasklistComponent } from './tasklist/tasklist.component';
+import { AddtaskComponent } from './addtask/addtask.component';
 
 const routes: Routes = [
-  {path: "", redirectTo:"home", pathMatch: "full"},
+  {path: "", redirectTo:"login", pathMatch: "full"},
+  {path: "login", component: LoginComponent},
   {path: "home", component: HomeComponent},
-  {path: "contact", component: ContactComponent},
-  {path: "*",component:NotfoundComponent}
+  {path: "*",component:HomeComponent}
 ];
 
 

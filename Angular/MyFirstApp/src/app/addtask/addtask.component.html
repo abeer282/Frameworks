@@ -1,1 +1,11 @@
-<p>addtask works!</p>
+<h3 class = "AddTaskLabel">Add Task</h3>
+
+<form class = "addTaskForm" action ="#" method = "POST">
+
+    <input [(ngModel)] = "item" placeholder="Enter Task" class = "AddTaskInput"
+    type="text" name="task"/>
+
+    <button (click)=add() class = "addTaskSubmitBtn" value="Add">Submit</button>
+
+
+</form>
