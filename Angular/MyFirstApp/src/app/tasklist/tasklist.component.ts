@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tasklist.component.css']
 })
 export class TasklistComponent implements OnInit {
-
+  todoList=['do dishes','make bed']
   constructor() { }
 
   ngOnInit(): void {

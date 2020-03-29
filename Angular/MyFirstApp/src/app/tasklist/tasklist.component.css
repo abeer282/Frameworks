@@ -1,0 +1,11 @@
+nav ul{
+    height: 300px;
+    width: 80%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+:host{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
