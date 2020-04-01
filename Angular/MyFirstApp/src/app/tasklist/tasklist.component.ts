@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TasklistComponent implements OnInit {
 
-  constructor(private todo:TodoService) { }
+  constructor(public todo:TodoService) { }
 
   ngOnInit(): void {
   }
