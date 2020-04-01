@@ -1,1 +1,47 @@
-<p>login works!</p>
+<h1>Log In</h1>
+<form class = "loginForm" (submit)="login()">
+
+        <input class = "input" 
+                requires 
+                placeholder = "Enter username" 
+                [(ngModel)]="userData.username" 
+                name="name" 
+                #name = "ngModel" 
+                id="name" 
+                type="text"
+                (input)="error=false"
+                />
+                
+                <br><br>
+
+
+            <div class = "error" *ngIf="name.touched && name.errors">
+                <div *ngIf="name.errors.required">
+                    <label style="color:red">ERROR:required field</label>
+                </div>
+            </div>
+
+            <input class = "input" 
+                    requires 
+                    placeholder = "Enter password" 
+                    [(ngModel)]="userData.password" 
+                    name="pass" 
+                    #pass = "ngModel" 
+                    id="name" 
+                    type="text"
+                    (input)="error=false"
+                    /> 
+                    
+                    <br><br>
+            <div class = "error" *ngIf="name.touched && !name.errors">
+                <div *ngIf="name.errors.required">
+                    <label style="color:red">ERROR:required field</label>
+
+                </div>
+            </div>
+
+            <div class ="error" *ngIf="error">
+                <label> Error: invalid info </label>
+            </div>
+        <button class="submitBtn"> Submit </button>
+</form>
