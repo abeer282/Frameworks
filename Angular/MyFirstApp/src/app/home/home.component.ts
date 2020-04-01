@@ -1,3 +1,4 @@
+import { Router} from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent   {
 
-  constructor() { }
+  constructor(private router:Router) {
+      let token=sessionStorage.getItem('jsessionid');
+      if(token==null || JSON.parse(token).expires_in < new Date().getTime() )
+      {
+        router.navigateByUrl('/login');
+      }
+    }
 
-  ngOnInit(): void {
-  }
+
 
 }
