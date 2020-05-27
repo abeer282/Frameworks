@@ -14,6 +14,6 @@ namespace DrugApi.Models
         {
         }
 
-        public DbSet<Drug> TodoItems { get; set; }
+        public DbSet<Drug> Drugs { get; set; }
     }
 }
