@@ -19,14 +19,35 @@ namespace DrugApi.Controllers
         public DrugsController(DrugContext context)
         {
             _context = context;
-            if(_context.Drugs.Count () == 0)
+            if (_context.Drugs.Count() == 0)
             {
                 _context.Drugs.Add(new Drug { Name = "Drug1" });
                 _context.SaveChanges();
             }
         }
 
+
+
+        // GET: api/drug
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Drug>>> GetDrugs()
+        {
+            return await _context.Drugs.ToListAsync();
+        }
+
+
+        // GET: api/drug/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Drug>> GetDrugs(long id)
+        {
+            var drug = await _context.Drugs.FindAsync(id);
+
+            if (drug == null)
+            {
+                return NotFound();
+            }
+
+            return drug;
+        }
     }
-
-
 }
