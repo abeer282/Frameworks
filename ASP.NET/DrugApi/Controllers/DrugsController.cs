@@ -10,7 +10,7 @@ using DrugApi.Models;
 
 namespace DrugApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/drugs")]
     [ApiController]
     public class DrugsController : Controller
     {
@@ -49,5 +49,18 @@ namespace DrugApi.Controllers
 
             return drug;
         }
+
+
+        // POST: api/drugs
+        [HttpPost]
+        public async Task<ActionResult<Drug>> PostTodoItem(Drug drug)
+        {
+            _context.Drugs.Add(drug);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetDrugs), new { id = drug.Id }, drug); //Returns an HTTP 201 status code, if successful. (201 =  new resource created on the server)
+        }
+
+
     }
 }
