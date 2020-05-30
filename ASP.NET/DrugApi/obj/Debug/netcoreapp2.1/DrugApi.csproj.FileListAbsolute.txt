@@ -1,0 +1,14 @@
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\bin\Debug\netcoreapp2.1\DrugApi.deps.json
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\bin\Debug\netcoreapp2.1\DrugApi.runtimeconfig.json
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\bin\Debug\netcoreapp2.1\DrugApi.runtimeconfig.dev.json
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\bin\Debug\netcoreapp2.1\DrugApi.dll
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\bin\Debug\netcoreapp2.1\DrugApi.pdb
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\obj\Debug\netcoreapp2.1\DrugApi.csprojAssemblyReference.cache
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\obj\Debug\netcoreapp2.1\DrugApi.csproj.CoreCompileInputs.cache
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\obj\Debug\netcoreapp2.1\DrugApi.RazorAssemblyInfo.cache
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\obj\Debug\netcoreapp2.1\DrugApi.RazorAssemblyInfo.cs
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\obj\Debug\netcoreapp2.1\DrugApi.AssemblyInfoInputs.cache
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\obj\Debug\netcoreapp2.1\DrugApi.AssemblyInfo.cs
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\obj\Debug\netcoreapp2.1\DrugApi.RazorTargetAssemblyInfo.cache
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\obj\Debug\netcoreapp2.1\DrugApi.dll
+C:\Users\abeer\Desktop\Github\Frameworks\ASP.NET\DrugApi\obj\Debug\netcoreapp2.1\DrugApi.pdb
