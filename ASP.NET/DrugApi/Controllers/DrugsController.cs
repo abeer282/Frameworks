@@ -10,7 +10,7 @@ using DrugApi.Models;
 
 namespace DrugApi.Controllers
 {
-    [Route("api/drugs")]
+    [Route("api/drug")]
     [ApiController]
     public class DrugsController : Controller
     {
@@ -51,9 +51,9 @@ namespace DrugApi.Controllers
         }
 
 
-        // POST: api/drugs
+        // POST: api/drug
         [HttpPost]
-        public async Task<ActionResult<Drug>> PostTodoItem(Drug drug)
+        public async Task<ActionResult<Drug>> PostDrug(Drug drug)
         {
             _context.Drugs.Add(drug);
             await _context.SaveChangesAsync();
@@ -61,6 +61,40 @@ namespace DrugApi.Controllers
             return CreatedAtAction(nameof(GetDrugs), new { id = drug.Id }, drug); //Returns an HTTP 201 status code, if successful. (201 =  new resource created on the server)
         }
 
+
+
+        // PUT: api/drug/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutDrug(long id, Drug drug)
+        {
+            if (id != drug.Id)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(drug).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+
+        // DELETE: api/drug/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteDrug(long id)
+        {
+            var drug = await _context.Drugs.FindAsync(id);
+
+            if (drug == null)
+            {
+                return NotFound();
+            }
+
+            _context.Drugs.Remove(drug);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
 
     }
 }
