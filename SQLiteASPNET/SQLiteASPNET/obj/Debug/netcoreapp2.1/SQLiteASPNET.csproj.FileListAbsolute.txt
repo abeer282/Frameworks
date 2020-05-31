@@ -1,0 +1,14 @@
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\bin\Debug\netcoreapp2.1\SQLiteASPNET.deps.json
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\bin\Debug\netcoreapp2.1\SQLiteASPNET.runtimeconfig.json
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\bin\Debug\netcoreapp2.1\SQLiteASPNET.runtimeconfig.dev.json
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\bin\Debug\netcoreapp2.1\SQLiteASPNET.dll
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\obj\Debug\netcoreapp2.1\SQLiteASPNET.csprojAssemblyReference.cache
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\obj\Debug\netcoreapp2.1\SQLiteASPNET.csproj.CoreCompileInputs.cache
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\obj\Debug\netcoreapp2.1\SQLiteASPNET.RazorAssemblyInfo.cache
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\obj\Debug\netcoreapp2.1\SQLiteASPNET.RazorAssemblyInfo.cs
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\obj\Debug\netcoreapp2.1\SQLiteASPNET.AssemblyInfoInputs.cache
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\obj\Debug\netcoreapp2.1\SQLiteASPNET.AssemblyInfo.cs
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\obj\Debug\netcoreapp2.1\SQLiteASPNET.RazorTargetAssemblyInfo.cache
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\bin\Debug\netcoreapp2.1\SQLiteASPNET.pdb
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\obj\Debug\netcoreapp2.1\SQLiteASPNET.dll
+C:\Users\abeer\Desktop\Github\Frameworks\SQLiteASPNET\SQLiteASPNET\obj\Debug\netcoreapp2.1\SQLiteASPNET.pdb
