@@ -1,0 +1,10 @@
+C:\Users\abeer\Desktop\Github\Frameworks\WindowsForms(dotNET CORE)\DesignPractice\bin\Debug\DesignPractice.exe.config
+C:\Users\abeer\Desktop\Github\Frameworks\WindowsForms(dotNET CORE)\DesignPractice\bin\Debug\DesignPractice.exe
+C:\Users\abeer\Desktop\Github\Frameworks\WindowsForms(dotNET CORE)\DesignPractice\bin\Debug\DesignPractice.pdb
+C:\Users\abeer\Desktop\Github\Frameworks\WindowsForms(dotNET CORE)\DesignPractice\obj\Debug\DesignPractice.csprojAssemblyReference.cache
+C:\Users\abeer\Desktop\Github\Frameworks\WindowsForms(dotNET CORE)\DesignPractice\obj\Debug\DesignPractice.Form1.resources
+C:\Users\abeer\Desktop\Github\Frameworks\WindowsForms(dotNET CORE)\DesignPractice\obj\Debug\DesignPractice.Properties.Resources.resources
+C:\Users\abeer\Desktop\Github\Frameworks\WindowsForms(dotNET CORE)\DesignPractice\obj\Debug\DesignPractice.csproj.GenerateResource.cache
+C:\Users\abeer\Desktop\Github\Frameworks\WindowsForms(dotNET CORE)\DesignPractice\obj\Debug\DesignPractice.csproj.CoreCompileInputs.cache
+C:\Users\abeer\Desktop\Github\Frameworks\WindowsForms(dotNET CORE)\DesignPractice\obj\Debug\DesignPractice.exe
+C:\Users\abeer\Desktop\Github\Frameworks\WindowsForms(dotNET CORE)\DesignPractice\obj\Debug\DesignPractice.pdb
