@@ -1,2 +1,2 @@
 # Frameworks
-Frameworks I learned individually. 
+Frameworks I've learned individually. 
